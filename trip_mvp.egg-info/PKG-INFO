@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: trip-mvp
+Version: 0.1
+Requires-Dist: click
+Requires-Dist: boto3
+Requires-Dist: python-dotenv
+Dynamic: requires-dist

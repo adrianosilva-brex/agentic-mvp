@@ -1,0 +1,1 @@
+This is mainly going to store the server logic data and the layer that communicates with anon api and others

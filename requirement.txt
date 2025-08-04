@@ -21,3 +21,4 @@ s3transfer==0.13.1
 six==1.17.0
 terraform-local==0.24.1
 urllib3==2.5.0
+requests==2.31.0
