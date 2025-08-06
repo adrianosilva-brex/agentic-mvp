@@ -27,6 +27,7 @@ provider "aws" {
 
   endpoints {
     s3             = var.localstack_endpoint
+    dynamodb       = var.localstack_endpoint
   }
 }
 

@@ -26,6 +26,7 @@ def get_anon_embedded_url(user_id: str, source_provider: str) -> str:
         raise Exception(f"Failed to get signed URL: {str(e)}")
 
 
+
 def health_check():
     url = os.getenv("ANON_API_URL") + "/healthz"
     headers = {

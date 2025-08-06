@@ -1,0 +1,18 @@
+# Core AWS and database dependencies
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Data processing and validation
+pydantic>=2.5.0
+
+# Development and testing
+pytest>=7.4.0
+pytest-mock>=3.12.0
+moto>=4.2.0  # For mocking AWS services in tests
+
+# Utilities
+python-dateutil>=2.8.0
+uuid
+
+# Optional: For enhanced data type detection
+validators>=0.22.0

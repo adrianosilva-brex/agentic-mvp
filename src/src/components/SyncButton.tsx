@@ -1,19 +1,19 @@
 import React from 'react';
 
 interface SyncButtonProps {
-  provider: string;
   isLoading: boolean;
   onClick: () => void;
+  disabled?: boolean;
 }
 
-export function SyncButton({ provider, isLoading, onClick }: SyncButtonProps) {
+export function SyncButton({ isLoading, onClick, disabled }: SyncButtonProps) {
   return (
     <button 
       onClick={onClick}
-      disabled={isLoading}
+      disabled={isLoading || disabled}
       className="sync-button"
     >
-      {isLoading ? `Syncing with ${provider}...` : `Sync with ${provider}`}
+      {isLoading ? "Syncing with external TMCs..." : "Sync with external TMCs"}
     </button>
   );
 }
