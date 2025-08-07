@@ -1,0 +1,74 @@
+{
+  "trip_id": "trip-versioned-123",
+  "traveler_id": "user-555",
+  "start_date": "2025-12-01",
+  "end_date": "2025-12-05",
+  "status": "confirmed",
+  "updated_at": "2025-08-03T08:22:00Z",
+  "version": 3,
+  "origin_type": "explicit",
+  "trip_confidence": 1.0,
+  "purpose": "Conference attendance",
+  "destination": "Austin, TX",
+  "air": {
+    "southwest": {
+      "confirmation_code": "SW789012",
+      "flight_number": "SW2468",
+      "departure": {
+        "airport": "SFO",
+        "time": "2025-12-01T10:30:00Z"
+      },
+      "arrival": {
+        "airport": "AUS",
+        "time": "2025-12-01T16:15:00Z"
+      },
+      "total_cost": 325.50
+    }
+  },
+  "version_history": [
+    {
+      "version": 1,
+      "timestamp": "2025-08-01T10:00:00Z",
+      "changes": ["trip created"],
+      "source": "email_extraction"
+    },
+    {
+      "version": 2,
+      "timestamp": "2025-08-02T15:40:00Z",
+      "changes": ["air.southwest added"],
+      "source": "pdf_upload"
+    },
+    {
+      "version": 3,
+      "timestamp": "2025-08-03T08:22:00Z",
+      "changes": ["air.southwest.departure.time changed from 09:30 to 10:30"],
+      "source": "airline_update_email",
+      "change_details": {
+        "field": "air.southwest.departure.time",
+        "old_value": "2025-12-01T09:30:00Z",
+        "new_value": "2025-12-01T10:30:00Z",
+        "reason": "Flight delayed by airline"
+      }
+    }
+  ],
+  "source_documents": [
+    {
+      "document_id": "doc-100",
+      "type": "conference_email",
+      "confidence": 0.98,
+      "contributed_fields": ["purpose", "destination", "start_date", "end_date"]
+    },
+    {
+      "document_id": "doc-101",
+      "type": "flight_confirmation",
+      "confidence": 0.95,
+      "contributed_fields": ["air.southwest"]
+    },
+    {
+      "document_id": "doc-102",
+      "type": "flight_change_notification",
+      "confidence": 0.97,
+      "contributed_fields": ["air.southwest.departure.time"]
+    }
+  ]
+}

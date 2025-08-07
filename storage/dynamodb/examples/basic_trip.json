@@ -1,0 +1,49 @@
+{
+  "trip_id": "trip-12345",
+  "traveler_id": "user-789",
+  "start_date": "2025-09-15",
+  "end_date": "2025-09-18",
+  "status": "confirmed",
+  "origin_type": "explicit",
+  "trip_confidence": 1.0,
+  "purpose": "Client meeting in NYC",
+  "destination": "New York, NY",
+  "air": {
+    "southwest": {
+      "confirmation_code": "ABC123",
+      "flight_number": "SW1234",
+      "departure": {
+        "airport": "SFO",
+        "time": "2025-09-15T09:30:00Z"
+      },
+      "arrival": {
+        "airport": "JFK",
+        "time": "2025-09-15T18:00:00Z"
+      },
+      "total_cost": 450.75
+    }
+  },
+  "lodging": {
+    "marriott": {
+      "confirmation_number": "H789012",
+      "hotel_name": "Marriott Times Square",
+      "check_in": "2025-09-15",
+      "check_out": "2025-09-18",
+      "nightly_rate": 199.00
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "doc-456",
+      "type": "email_itinerary",
+      "confidence": 0.95,
+      "contributed_fields": ["air.southwest"]
+    },
+    {
+      "document_id": "doc-789",
+      "type": "hotel_pdf",
+      "confidence": 0.92,
+      "contributed_fields": ["lodging.marriott"]
+    }
+  ]
+}

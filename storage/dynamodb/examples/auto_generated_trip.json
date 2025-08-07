@@ -1,0 +1,33 @@
+{
+  "trip_id": "trip-auto-67890",
+  "traveler_id": "user-789",
+  "start_date": "2025-10-05",
+  "end_date": "2025-10-05",
+  "status": "confirmed",
+  "origin_type": "derived",
+  "trip_confidence": 0.75,
+  "purpose": "Auto-generated from booking",
+  "destination": "Los Angeles, CA",
+  "air": {
+    "delta": {
+      "confirmation_code": "DEF456",
+      "flight_number": "DL2567",
+      "departure": {
+        "airport": "SFO",
+        "time": "2025-10-05T14:30:00Z"
+      },
+      "arrival": {
+        "airport": "LAX",
+        "time": "2025-10-05T16:45:00Z"
+      },
+      "total_cost": 285.50
+    }
+  },
+  "merge_candidates": [
+    {
+      "trip_id": "trip-12345",
+      "similarity_score": 0.85,
+      "reasons": ["same_traveler", "date_proximity", "similar_destination"]
+    }
+  ]
+}

@@ -21,8 +21,8 @@ class TripStatus(Enum):
 
 class OriginType(Enum):
     """Trip origin type enumeration."""
-    EXPLICIT = "explicit"  # User-created trip
-    DERIVED = "derived"    # Auto-generated from standalone booking
+    EXPLICIT = "explicit"
+    DERIVED = "derived" 
 
 class ChangeType(Enum):
     """Change type enumeration."""

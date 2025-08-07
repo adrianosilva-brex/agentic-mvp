@@ -6,20 +6,17 @@ This module implements the Deck-specific TMC provider logic.
 
 import os
 from typing import Dict, Any
+from dotenv import load_dotenv
 
 import sys
+import os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from base_tmc_provider import (
     BaseTMCProvider, TMCProviderType, HealthStatus,
     TMCProviderError
 )
 
-# Try to load dotenv if available, but don't fail if it's not
-try:
-    from dotenv import load_dotenv
-    load_dotenv()
-except ImportError:
-    pass
+load_dotenv()
 
 
 class DeckProvider(BaseTMCProvider):

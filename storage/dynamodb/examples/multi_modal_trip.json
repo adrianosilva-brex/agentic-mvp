@@ -1,0 +1,81 @@
+{
+  "trip_id": "trip-multi-001",
+  "traveler_id": "user-999",
+  "start_date": "2025-12-15",
+  "end_date": "2025-12-20",
+  "status": "confirmed",
+  "origin_type": "explicit",
+  "trip_confidence": 1.0,
+  "purpose": "Multi-modal vacation trip",
+  "destination": "Pacific Northwest",
+  "air": {
+    "alaska": {
+      "confirmation_code": "AS998877",
+      "flight_number": "AS123",
+      "departure": {
+        "airport": "SFO",
+        "time": "2025-12-15T07:00:00Z"
+      },
+      "arrival": {
+        "airport": "SEA",
+        "time": "2025-12-15T09:30:00Z"
+      },
+      "total_cost": 275.00
+    }
+  },
+  "rail": {
+    "amtrak": {
+      "confirmation_number": "AMK123456",
+      "train_number": "11",
+      "route_name": "Coast Starlight",
+      "departure": {
+        "station": "Seattle, WA",
+        "time": "2025-12-17T09:45:00Z"
+      },
+      "arrival": {
+        "station": "Portland, OR", 
+        "time": "2025-12-17T13:15:00Z"
+      },
+      "car_type": "Coach",
+      "seat_number": "12A",
+      "total_cost": 89.50
+    }
+  },
+  "ground": {
+    "hertz": {
+      "confirmation_number": "HZ789012",
+      "pickup_location": "Portland Union Station",
+      "pickup_date": "2025-12-17T14:00:00Z",
+      "dropoff_location": "Portland Airport",
+      "dropoff_date": "2025-12-20T10:00:00Z",
+      "vehicle_class": "Compact",
+      "daily_rate": 42.99,
+      "total_cost": 128.97
+    },
+    "uber": {
+      "ride_type": "UberX",
+      "pickup_location": "Seattle Airport",
+      "dropoff_location": "Pike Place Market",
+      "pickup_time": "2025-12-15T10:15:00Z",
+      "estimated_cost": 35.00
+    }
+  },
+  "lodging": {
+    "airbnb": {
+      "confirmation_code": "AIRBNB445566",
+      "property_name": "Cozy Downtown Seattle Apartment",
+      "check_in": "2025-12-15",
+      "check_out": "2025-12-17",
+      "nightly_rate": 125.00,
+      "total_cost": 250.00
+    },
+    "marriott": {
+      "confirmation_number": "MR998877",
+      "hotel_name": "Portland Marriott Downtown",
+      "check_in": "2025-12-17",
+      "check_out": "2025-12-20",
+      "nightly_rate": 165.00,
+      "total_cost": 495.00
+    }
+  }
+}

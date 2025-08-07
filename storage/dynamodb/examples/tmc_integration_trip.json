@@ -1,0 +1,49 @@
+{
+  "trip_id": "trip-tmc-001",
+  "traveler_id": "user-456",
+  "start_date": "2025-11-10",
+  "end_date": "2025-11-15",
+  "status": "confirmed",
+  "origin_type": "explicit",
+  "trip_confidence": 1.0,
+  "purpose": "TMC integrated business trip",
+  "destination": "Chicago, IL",
+  "air": {
+    "american": {
+      "confirmation_code": "AA123789",
+      "flight_number": "AA456",
+      "departure": {
+        "airport": "SFO",
+        "time": "2025-11-10T10:00:00Z"
+      },
+      "arrival": {
+        "airport": "ORD",
+        "time": "2025-11-10T16:30:00Z"
+      },
+      "total_cost": 520.00
+    }
+  },
+  "tmc": {
+    "concur": {
+      "trip_number": "T-2025-11-001",
+      "approval_status": "approved",
+      "budget_category": "client_visits",
+      "approved_amount": 2500.00,
+      "approver": "manager@company.com"
+    }
+  },
+  "lodging": {
+    "hilton": {
+      "confirmation_number": "HH556677",
+      "hotel_name": "Hilton Chicago",
+      "check_in": "2025-11-10",
+      "check_out": "2025-11-15",
+      "nightly_rate": 185.00,
+      "loyalty_program": {
+        "program": "Hilton Honors",
+        "number": "98765432",
+        "tier": "Gold"
+      }
+    }
+  }
+}
